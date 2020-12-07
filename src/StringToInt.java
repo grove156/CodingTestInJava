@@ -21,10 +21,11 @@ public class StringToInt {
     public int solution(int n) {
         int answer = 0;
 
-        //
+        //Int to String
         String str = Integer.toString(n);
 
         for(int i=0; i<str.length(); i++){
+            //Char to Int
             answer +=  Character.getNumericValue(str.charAt(i));
         }
 
